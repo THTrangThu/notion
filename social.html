@@ -14,7 +14,7 @@
   <style>
     * {
       margin: 0;
-      padding: 0;
+      padding: 3;
       box-sizing: border-box;
     }
 
@@ -32,7 +32,7 @@
 
     .icon {
       /* Change the icon size here */
-      font-size: 2em;
+      font-size: 3em;
       /* Change the icons colours here*/
       color: #7a7a7a
     }
@@ -72,6 +72,10 @@
 
     .telegram:hover {
       color: #2AABEE;
+    }
+    
+    .zalo:hover {
+      color: #00CCFF;
     }
 
     .social {
@@ -143,7 +147,12 @@
       </div>
       <!-- End telegram Icon -->
 
-
+      <!-- Start zalo Icon -->
+      <div id="zalo" onclick="navigate(this.id)" class="social">
+        <span class="icon zalo"><i class="fa-solid fa-z"></i></span>
+      </div>
+      <!-- End zalo Icon -->
+      
 
     </div>
 
@@ -182,6 +191,9 @@
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus();
+        }
+        else if (id === "zalo") {
+          window.open("https://chat.zalo.me/", '_blank').focus();
         }
       }
 
